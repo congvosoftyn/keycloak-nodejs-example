@@ -1,9 +1,6 @@
 import jwtmod from 'jsonwebtoken'
 import request from 'request';
-
-const keycloakHost = 'localhost';
-const keycloakPort = '8088';
-const realmName = 'myrealm';
+import { keycloakHost, keycloakPort, realmName } from './config/key.js';
 
 const URI = `http://${keycloakHost}:${keycloakPort}/realms/${realmName}/protocol/openid-connect/userinfo`;
 
